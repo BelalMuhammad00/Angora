@@ -1,0 +1,278 @@
+:root{
+--main-color:#f25454;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: var(--main-color);
+}
+.navbar .navbar-nav>li a:hover
+,.nav-link:focus, .nav-link:hover{
+    color: var(--main-color); 
+}
+
+.nav-link{
+    color: white;
+}
+.navbar{
+    border-bottom: solid 0.1px white;
+    background-color: #00000078;
+}
+
+.home-slide-prev{
+    top:300px;
+    left: 0;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 2px solid white;
+    opacity: 0.5;
+    transition: opacity .15s ease;
+
+}
+.home-slide-next{
+    top:350px;
+    left: 0;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    opacity: 0.5;
+    border: 2px solid white;
+    transition: opacity .15s ease;
+}
+.home button:hover{
+    background-color: white;
+    color: #f25454 !important;
+    opacity: 1;
+transition: all 350ms;
+} 
+.carousel-control-prev-icon,
+.carousel-control-next-icon
+{
+    background-image: none;
+}
+.carousel-caption{
+    top: 40%;
+}
+.home h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+@media screen and (max-width: 992px){
+html{
+        font-size: 14px;
+    }
+}
+/* start about */
+
+.head h2::before{
+    content: "A";
+    position: absolute;
+    top: -35px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #0000000f;
+    FONT-SIZE: 4.5REM;
+    font-weight: bold;
+}
+.head h2::after{
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 3%;
+    color: black;
+    background-color: black;
+    margin: 0 auto 20px;
+    transition: all 350ms;
+}
+.head:hover.head h2::after{
+width: 5%;
+}
+.progress-heading .progress-value{
+    text-align: right;
+}
+.progress-bar {
+    background-color: var(--main-color) !important;
+    color: var(--main-color) !important;
+}
+.progress, .progress-stacked{
+    height: 0.2rem !important;
+}
+/* end about */
+
+/* start team  */
+#team .head h2::before{
+    content: "O";
+}
+.team-img-content{
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    right: 0;
+    bottom: 0;
+    background-color: #f2545491;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.team-icons i{
+    color: white;
+    margin:0 10px;
+}
+.team .content:hover .team-img-content{
+opacity: 1;
+top: 0;
+
+}
+.team-img{
+    transition: all 0.3s;
+}
+.team .content:hover .team-img{
+    transform: scale(1.1);
+}
+.team .content:hover .team-titles h5{
+    color: var(--main-color);
+}
+.contact-btn{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+}
+.contact-btn:hover{
+    background-color: #f25454ad;
+    color: white;
+}
+/* end team  */
+/* start services  */
+
+.services{
+    background: #f2f2f22b;
+}
+#services .head h2::before{
+    content: "S";
+}
+.services .content:hover h3{
+color: var(--main-color);
+transition: all 350ms;
+}
+.services-icon{
+    color: var(--main-color);
+}
+/* end services  */
+
+/* start client  */
+
+.client .head h2::before{
+    content: "C";
+}
+.client figure{
+    width: 10%;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 50%;
+    opacity: 0;
+}
+.carousel-indicators [data-bs-target]{
+    height: 10rem;
+    width: 10rem;
+    text-indent: 0;
+}
+.carousel-control-next, .carousel-control-prev
+/* end client  */
+
+/* start contact */
+
+.contact .head h2::before{
+    content: "G";
+}
+.contact{
+    background: #f2f2f22b;
+}
+.contact-icon{
+    color: var(--main-color);
+}
+/* end contact  */
+
+/* start footer  */
+footer{
+    background: #222;
+}
+footer .content{
+    color: #b0b0b0;
+}
+footer .content h5{
+    color: white;
+}
+.main-color:hover{
+color: var(--main-color);
+transition: all 0.5s;
+cursor: pointer;
+}
+
+.footer-icon{
+    border: solid 1px #b0b0b0;
+    padding: 0.3rem;
+    border-radius: 5px;
+    transition: all 350ms;
+    cursor: pointer;
+}
+.footer-icon:hover{
+    color: var(--main-color);
+    border:solid 1px var(--main-color);
+}
+footer .overlay{
+    background-image: url(./images/dotted-map.png);
+    background-size: contain;
+    background-position:center ;
+}
+footer .overlay::before{
+    content: "";
+
+}
+.to-top{
+    position: absolute;
+    display: block;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    cursor: pointer !important;
+    background-color: #f2545494;
+}
+.to-top:hover{
+    background-color: var(--main-color); 
+}
+#copyRight-footer{
+    background: #1a1a1a;
+}
+/* end footer  */
+
+
